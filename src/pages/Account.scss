@@ -1,0 +1,106 @@
+// Account.scss
+
+.account-page {
+    padding: var(--spacing-medium);
+
+    h1 {
+        font-size: var(--font-large);
+        color: var(--text-color);
+        margin-bottom: var(--spacing-large);
+    }
+
+    .account-section {
+        margin-bottom: var(--spacing-large);
+        padding: var(--spacing-medium);
+        background-color: var(--card-bg);
+        border-radius: var(--border-radius);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, color 0.3s;
+
+        h2 {
+            font-size: var(--font-medium);
+            color: var(--text-color);
+            margin-bottom: var(--spacing-small);
+        }
+
+        .input-group {
+            margin-bottom: var(--spacing-medium);
+
+            label {
+                display: block;
+                margin-bottom: var(--spacing-small);
+                font-size: var(--font-medium);
+                color: var(--text-color);
+            }
+
+            input {
+                width: 100%;
+                padding: var(--spacing-small);
+                border: 1px solid var(--input-border-color);
+                background-color: var(--input-bg-color);
+                color: var(--input-text-color);
+                border-radius: var(--border-radius);
+                font-size: var(--font-medium);
+                transition: border-color 0.3s;
+
+                &:focus {
+                    outline: none;
+                    border-color: var(--accent-color);
+                }
+            }
+        }
+
+        .save-button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: var(--spacing-small) var(--spacing-medium);
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: var(--hover-color);
+            }
+        }
+
+        .message {
+            margin-top: var(--spacing-small);
+            color: var(--accent-color);
+        }
+    }
+
+    .theme-toggle-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .theme-toggle {
+            background-color: var(--accent-color);
+            color: white;
+            padding: var(--spacing-small) var(--spacing-medium);
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: var(--hover-color);
+            }
+        }
+    }
+
+    .logout-button {
+        background-color: #ef5350;
+        color: white;
+        padding: var(--spacing-small) var(--spacing-medium);
+        border: none;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #d32f2f;
+        }
+    }
+}

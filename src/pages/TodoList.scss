@@ -1,0 +1,68 @@
+// TodoList.scss
+
+.todolist-page {
+    padding: var(--spacing-large);
+    text-align: center;
+
+    h1 {
+        margin-bottom: var(--spacing-large);
+        color: var(--text-color);
+    }
+
+    .add-todo-form {
+        margin-bottom: var(--spacing-large);
+
+        .input-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--spacing-small);
+
+            input {
+                padding: var(--spacing-small);
+                border: 1px solid var(--input-border-color);
+                background-color: var(--input-bg-color);
+                color: var(--input-text-color);
+                border-radius: var(--border-radius);
+                font-size: var(--font-medium);
+                transition: border-color 0.3s;
+
+                &:focus {
+                    outline: none;
+                    border-color: var(--accent-color);
+                }
+            }
+
+            .add-todo-button {
+                background-color: var(--accent-color);
+                color: white;
+                padding: var(--spacing-small) var(--spacing-medium);
+                border: none;
+                border-radius: var(--border-radius);
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: var(--hover-color);
+                }
+            }
+        }
+
+        .error-message {
+            color: #ef5350;
+            font-size: var(--font-small);
+            margin-top: var(--spacing-small);
+        }
+    }
+
+    .todo-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: var(--spacing-medium);
+
+        p {
+            font-size: var(--font-medium);
+            color: var(--text-muted);
+        }
+    }
+}

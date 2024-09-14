@@ -1,0 +1,69 @@
+// Login.scss
+
+.login-page {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: var(--spacing-large);
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    h1 {
+        margin-bottom: var(--spacing-large);
+        color: var(--text-color);
+    }
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-group {
+        margin-bottom: var(--spacing-medium);
+
+        label {
+            display: block;
+            margin-bottom: var(--spacing-small);
+            font-size: var(--font-medium);
+            color: var(--text-color);
+        }
+
+        input {
+            width: 100%;
+            padding: var(--spacing-small);
+            border: 1px solid var(--input-border-color);
+            background-color: var(--input-bg-color);
+            color: var(--input-text-color);
+            border-radius: var(--border-radius);
+            font-size: var(--font-medium);
+            transition: border-color 0.3s;
+
+            &:focus {
+                outline: none;
+                border-color: var(--accent-color);
+            }
+        }
+    }
+
+    .error-message {
+        color: #ef5350;
+        font-size: var(--font-small);
+        margin-bottom: var(--spacing-medium);
+    }
+
+    .login-button {
+        background-color: var(--accent-color);
+        color: white;
+        padding: var(--spacing-small) var(--spacing-medium);
+        border: none;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: var(--hover-color);
+        }
+    }
+}

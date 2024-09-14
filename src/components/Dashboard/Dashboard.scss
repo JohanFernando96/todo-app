@@ -1,0 +1,50 @@
+.dashboard {
+    padding: 24px;
+
+    .dashboard-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+        h1 {
+            font-size: 2rem;
+            color: var(--text-color);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 8px;
+
+            button {
+                background-color: var(--card-bg);
+                border: 1px solid var(--border-color);
+                padding: 8px 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                color: var(--text-color);
+                transition: background-color 0.3s ease;
+
+                &.active {
+                    background-color: var(--accent-color);
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: var(--hover-color);
+                }
+            }
+        }
+    }
+
+    .dashboard-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 16px;
+
+        p {
+            text-align: center;
+            color: var(--text-muted);
+        }
+    }
+}

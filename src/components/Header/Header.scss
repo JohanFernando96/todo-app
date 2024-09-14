@@ -1,0 +1,48 @@
+// Header.scss
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-medium);
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+
+    h1 {
+        font-size: var(--font-large);
+        color: var(--text-color);
+    }
+
+    .theme-toggle {
+        background-color: var(--accent-color);
+        color: #ffffff;
+        padding: var(--spacing-small) var(--spacing-medium);
+        border: none;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: var(--hover-color);
+        }
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-small);
+
+        .logout {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            cursor: pointer;
+            font-size: var(--font-small);
+
+            &:hover {
+                color: var(--accent-color);
+            }
+        }
+    }
+}
